@@ -24,7 +24,7 @@ export default function Header(){
         </div>
         <nav className={menuOpen ? "open" : ""}>
             <div className="nav-btns">
-                <NavLink to="/" className="nav-btn">home</NavLink>
+                <NavLink to="/Musk-project/" className="nav-btn">home</NavLink>
                 <NavLink to="/ourteam" className="nav-btn">our team</NavLink>
                 <NavLink to="/programs" className="nav-btn">programs</NavLink>
                 <NavLink to="/courses" className="nav-btn">courses</NavLink>
