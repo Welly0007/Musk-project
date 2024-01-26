@@ -1,0 +1,416 @@
+.hero{
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1111111111111111;
+}
+#heroimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    border-radius: 25px;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.inner > h4 ,.explore h4, .why-musk h4{
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    background: var(--orange-clr);
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 16px;
+    font-weight: 500;
+}
+.inner > h4{
+    margin-top: 150px;
+}
+.inner > .main-para{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 64px;
+    font-weight: 800;
+    /* width: 50%; */
+    margin: 45px 0;
+}
+.main-para span{
+    color: var(--orange-clr);
+    font-style: italic;
+}
+.small-para{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 18px;
+    font-weight: 500;
+    width: 30%;
+}
+.circle{
+    position: absolute;
+    bottom: -100px;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* slots */
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    gap: 75px;
+}
+.explore-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.explore-header > h3{
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%; /* 40px */
+    text-transform: capitalize;
+}
+.explore-header > h3 span{
+    color: #3959FF;
+    text-transform: uppercase;
+}
+.slots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.slot{
+    position: relative;
+    overflow: hidden;
+    border-radius: 45px;
+}
+.slot .wrapper{
+    background:linear-gradient(180deg, rgba(255, 47, 1, 0.00) 0%, rgba(255, 47, 1, 0.45) 56.77%);
+    opacity: 0;
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    transition: .5s;
+    border-radius: 45px;
+}
+.slot:hover .wrapper, .slot:hover .inner-text p{
+    opacity: 1;
+}
+.slot .inner-text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.explore .inner-text h2{
+    color: #FFF;
+    font-family: var(--Switzer-font);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%; /* 32.4px */
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.explore .inner-text p{
+    color: #FFF;
+    font-family: var(--Switzer-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 145%; /* 34.8px */
+    transition: .5s;
+    opacity: 0;
+}
+/* slots */
+/* Why Musk */
+#why-mob{
+    display: none;
+}
+.why-musk{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.why-musk .left, .why-musk .right{
+    width: 35%;
+}
+.why-musk .left h2{
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 125%; /* 80px */
+    text-transform: capitalize;
+    width: 390px;
+    margin: 25px 0 50px;
+}
+.why-musk .right{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.why-musk .right .row{
+    display: flex;
+    position: relative;
+    /* margin-bottom: 100px; */
+}
+.row svg{
+    position: absolute;
+    left: 0;
+}
+.row-inner{
+    margin-left: 95px;
+}
+.row-inner h3{
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 90%; /* 28.8px */
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+.why-musk .right .row-inner span{
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 145%; /* 34.8px */
+}
+
+/* Why Musk */
+@media only screen and (max-width:1600px) {
+    .slot img{
+        height: 514px;
+    }
+    .slot .inner-text{
+        bottom: 6px;
+    }
+    .explore .inner-text h2{
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+}
+@media only screen and (max-width:1000px){
+    .hero{
+        height: auto;
+        padding: 0 30px;
+    }
+    .inner > h4{
+        margin-top: 45px;
+    }
+    .inner > .main-para{
+        font-size: 45px;
+        width: 100%;
+    }
+    .small-para{
+        width: 100%;
+        margin: 45px 0px;
+    }
+    .circle{
+        display: none;
+    }
+    /* slots */
+    .explore{
+        margin-top: 150px;
+    }
+    .slot img{
+        width: 100%;
+        height: auto;
+    }
+    .slot .wrapper{
+        border-radius: 40px;
+    }
+    .slot .inner-text{
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+    }
+    .explore .inner-text h2{
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+    .explore .inner-text p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /* slots */
+    /* Why Musk */
+    .why-musk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 200px;
+        position: relative;
+    }
+    .why-musk .left, .why-musk .right{
+        width: 100%;
+        padding: 0 45px;
+    }
+    #why-desk{
+        display: none;
+    }
+    #why-mob{
+        display: block;
+        position: absolute;
+        right: 90px;
+        top: 30px;
+    }
+    .why-musk .left h2{
+        font-size: 40px;
+        width: 363px;
+        margin: 25px 0 75px;
+    }
+    .why-musk .right{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+    .why-musk .right .row{
+        display: flex;
+        align-items: center;
+
+        /* margin-bottom: 100px; */
+    }
+    .row svg{
+        position: absolute;
+        left: 0;
+        margin-right: 500px;
+    }
+    .row-inner{
+        margin-left: 95px;
+    }
+    .row-inner h3{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    .why-musk .right .row-inner span{
+        color: #000;
+        font-family: var(--Switzer-font);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 145%; /* 34.8px */
+    }
+}
+@media only screen and (max-width:450px){
+    .hero{
+        height: auto;
+        padding: 0 30px;
+    }
+    .inner > h4{
+        margin-top: 45px;
+    }
+    .inner > .main-para{
+        font-size: 26px;
+        width: 100%;
+    }
+    .small-para{
+        width: 100%;
+        margin: 45px 0px;
+    }
+    .circle{
+        display: none;
+    }
+    
+    /* slots */
+    .slot{
+        border-radius: 25px;
+        height: 500px;
+        width: 100%;
+    }
+    .slot img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slot .wrapper {
+        height: 100%;
+        border-radius: 25px;
+    }
+    /* slots */
+    /* Why Musk */
+    .why-musk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 200px;
+        position: relative;
+    }
+    .why-musk .left, .why-musk .right{
+        width: 100%;
+    }
+    #why-desk{
+        display: none;
+    }
+    #why-mob{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+    .why-musk .left{
+        padding: 0;
+    }
+    .why-musk .left h2{
+        font-size: 35px;
+        width: 250px;
+        /* margin: 25px 0 75px; */
+    }
+    .why-musk .right{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding: 0;
+    }
+    .why-musk .right .row{
+        display: flex;
+        align-items: center;
+        position: relative;
+        /* margin-bottom: 100px; */
+    }
+    .row svg{
+        position: absolute;
+        left: 0;
+    }
+    .row-inner{
+        margin-left: 95px;
+    }
+    .row-inner h3{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .why-musk .right .row-inner span{
+        color: #000;
+        font-family: var(--Switzer-font);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 145%; /* 34.8px */
+    }
+}

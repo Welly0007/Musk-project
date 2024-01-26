@@ -1,0 +1,100 @@
+footer{
+    position: relative;
+    /* width: 100%; */
+    margin:125px 45px 45px;
+    padding-bottom: 75px;
+    height: auto;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+#cln-footer{
+    display: flex;
+    flex-direction: column;
+}
+footer h4,  footer a:not(.icon){
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 12px;
+    opacity: 0.45;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#bdan{
+    position: relative;
+}
+#bdan img:nth-child(2){
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#cln-footer:nth-child(2) span{
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+#copy-right{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    font-family: var(--Switzer-font);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    opacity: 0.75;
+}
+@media only screen and (max-width:900px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        padding-left: 50px;
+    }
+    footer{
+        position: relative;
+        /* width: 100%; */
+        margin:125px 12px 75px;
+        padding-bottom: 0px;
+        height: auto;
+    }
+    #cln-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+    }
+    #cln-footer:nth-child(2) span{
+        font-size: 24px;
+    }
+    #cln-footer:nth-child(3 ), #cln-footer:nth-child(4){
+        display: flex;
+        flex-direction: row;
+        gap: 0px 25px;
+        flex-wrap: wrap;
+    }
+    #copy-right{
+        left: 50px;
+        bottom: -70px;
+    }
+}
+@media only screen and (max-width:450px){
+    footer{
+        padding-left: 0;
+    }
+}

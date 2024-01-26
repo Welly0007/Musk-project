@@ -1,0 +1,121 @@
+.container{
+    padding: 200px 0;
+    border-radius: 0px 0px 45px 45px;
+    background: rgba(255, 47, 1, 0.05);
+    border-bottom: 1px solid #FF2F01;
+}
+.ourteam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #000;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 128px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.ourteam p{
+    color: #000;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 800px;
+    margin-bottom: 75px;
+}
+p span{
+    color: #FF2F01;
+}
+.members{
+    display: flex;
+    gap: 75px;
+}
+.member{
+    position: relative;
+}
+.member-img{
+    width: 375px;
+    height: 375px;
+}
+.member-img img {
+    border-radius: 45px;
+    position: absolute;
+}
+.member-img span{
+    display: flex;
+    padding: 7px 16px;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border-radius: 25px;
+    border: 1px solid #FF2F01;
+    background: rgba(255, 255, 255, 0.95);
+    color: #FF2F01;
+    font-family: var(--Switzer-font);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.member >span{
+    border-radius: 45px;
+    background: rgba(39, 67, 109, 0.14);
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: var(--Switzer-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    opacity: 0;
+}
+.member:hover>span{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.member:hover .member-img span{
+    color: #FFFFFF;
+    background: #FF2F01;
+    transition: 0.5s ease-in-out;
+}
+@media only screen and (max-width:1300px){
+    .members{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width:1000px) {
+    h1{
+        font-size: 90px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+    .ourteam p{
+        font-size: 16px;
+        font-weight: 500;
+        width: auto;
+        min-width:300px ;
+        margin-bottom: 75px;
+    }
+    .container{
+        padding: 200px 0;
+        border-radius: 0px 0px 25px 25px;
+        margin: 0 5px;
+        border-bottom: 1px solid #FF2F01;
+    }
+}
