@@ -24,7 +24,7 @@ export default function Header(){
             <span>+20 109 320 4749</span>
         </div>
         <div id="cln-footer">
-            <Link to="/">home</Link>
+            <Link to="/Musk-project/">home</Link>
             <Link to="/programs">programs</Link>
             <Link to="/courses">courses</Link>
             <Link to="/ourteam">our team</Link>
