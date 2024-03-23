@@ -1,7 +1,7 @@
 
 header{
     width: 100%;
-    padding: 30px 50px;
+    padding: 10px 50px;
     display: flex;
     position: absolute;
     top: 0;
@@ -16,8 +16,8 @@ nav{
 
 .logo-head img{
     width: 90.1px;
-    height: 53px;
-    flex-shrink: 0;
+    height: auto;
+
 }
 .logo-head svg{
     display: none;
@@ -80,7 +80,7 @@ margin: 0 5px;
     header{
         display: flex;
         flex-direction: column;
-        padding: 30px 25px;
+        padding: 10px 25px;
         height: 100vh;
         transition: 0.5s;
         z-index: -1;
@@ -137,7 +137,7 @@ margin: 0 5px;
         transform: translateX(0);
         display: flex;
         flex-direction: column;
-        margin: 125px 0;
+        margin: 125px 0 75px;
     }
     .nav-btn{
     text-align: justify;

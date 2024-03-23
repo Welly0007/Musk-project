@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import headLogo from "../assets/headLogo.png"
+import headLogo from "../assets/headLogo.webp"
 import {Link, NavLink} from "react-router-dom"
 import "../styles/header.css"
 

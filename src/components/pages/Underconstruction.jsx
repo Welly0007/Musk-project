@@ -1,5 +1,5 @@
 import React from 'react'
-import Underimg from "../../assets/underImg.png"
+import Underimg from "../../assets/underImg.webp"
 import "../../styles/underconstruction.css"
 
 const Underconstruction = () => {

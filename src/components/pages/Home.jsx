@@ -1,9 +1,9 @@
 import React from 'react'
-import slot1 from './../../assets/slot1.png'
-import slot2 from './../../assets/slot2.png'
-import slot3 from './../../assets/slot3.png'
-import slot4 from './../../assets/slot4.png'
-import heroImg from './../../assets/heroImg.png'
+import slot1 from './../../assets/slot1.webp'
+import slot2 from './../../assets/slot2.webp'
+import slot3 from './../../assets/slot3.webp'
+import slot4 from './../../assets/slot4.webp'
+import heroImg from './../../assets/heroImg.webp'
 import "./../../styles/home.css"
 const Home = () => {
   return (

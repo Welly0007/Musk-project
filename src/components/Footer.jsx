@@ -1,7 +1,7 @@
-import Insta from "../assets/insta_icon.png"
-import Insta2 from "../assets/insta_icon2.png"
-import linked from "../assets/linked_icon.png"
-import Facebook from "../assets/facebook_icon.png"
+import Insta from "../assets/insta_icon.webp"
+import Insta2 from "../assets/insta_icon2.webp"
+import linked from "../assets/linked_icon.webp"
+import Facebook from "../assets/facebook_icon.webp"
 import {Link, NavLink} from "react-router-dom"
 import "../styles/footer.css"
 

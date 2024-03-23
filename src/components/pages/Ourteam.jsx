@@ -1,7 +1,7 @@
 import React from 'react'
-import Member1 from '../../assets/member1.png'
-import Member2 from '../../assets/member2.png'
-import Member3 from '../../assets/member3.png'
+import Member1 from '../../assets/member1.webp'
+import Member2 from '../../assets/member2.webp'
+import Member3 from '../../assets/member3.webp'
 
 import '../../styles/ourteam.css'
 const Ourteam = () => {
@@ -15,7 +15,7 @@ const Ourteam = () => {
           <div className="member">
             <div className="member-img">
               <img src={Member1} alt='member1'></img>
-              <span>profesional Director</span>
+              <span>Director</span>
             </div>
             <span>Rofaida Yasser Ahmed</span>
           </div>

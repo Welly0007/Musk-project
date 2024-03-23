@@ -33,7 +33,7 @@ p span{
 }
 .members{
     display: flex;
-    gap: 75px;
+    gap: 50px;
 }
 .member{
     position: relative;
@@ -43,7 +43,7 @@ p span{
     height: 375px;
 }
 .member-img img {
-    border-radius: 45px;
+    border-radius: 20px;
     position: absolute;
 }
 .member-img span{
@@ -57,19 +57,20 @@ p span{
     border-radius: 25px;
     border: 1px solid #FF2F01;
     background: rgba(255, 255, 255, 0.95);
-    color: #FF2F01;
+    color: #FFFFFF;
+    background: #FF2F01;
     font-family: var(--Switzer-font);
     font-size: 12px;
     font-weight: 500;
     text-transform: capitalize;
 }
 .member >span{
-    border-radius: 45px;
+    border-radius: 20px;
     background: rgba(39, 67, 109, 0.14);
     display: flex;
-    padding: 25px;
+    padding: 15px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     align-self: stretch;
     color: #000;
@@ -80,13 +81,10 @@ p span{
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
-    opacity: 0;
-}
-.member:hover>span{
     opacity: 1;
-    transition: 0.5s ease-in-out;
+    margin-top: 20px;
 }
-.member:hover .member-img span{
+.member:hover .member-img > span{
     color: #FFFFFF;
     background: #FF2F01;
     transition: 0.5s ease-in-out;
@@ -98,6 +96,11 @@ p span{
     }
 }
 @media only screen and (max-width:1000px) {
+    .members{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
     h1{
         font-size: 90px;
         font-weight: 600;
@@ -117,5 +120,21 @@ p span{
         border-radius: 0px 0px 25px 25px;
         margin: 0 5px;
         border-bottom: 1px solid #FF2F01;
+    }
+    .member-img{
+        width: 275px;
+        height: 275px;
+    }
+    .member-img img{
+        width: 275px;
+        height: 275px;
+        /* overflow: hidden; */
+    }
+    .member-img{
+    }
+    .member > span{
+        font-size: 18px;
+        width: 100%;
+        justify-self: center;
     }
 }
